@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<htmlt xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title>courses</title>
 </head>
 <body>
 <h1>A list of Courses</h1>
-<div> th:each="courses: ${courses}">
-	<li>th:text="${course.name}>"</li>
+<div th:each="course: ${courses}">
+	<li th:text="${course.name}"> </li>
 </div>
 
 
